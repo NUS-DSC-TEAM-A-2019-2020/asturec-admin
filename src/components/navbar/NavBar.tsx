@@ -1,20 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { HOME } from 'constants/routes';
-import REACT_LOGO from 'assets/images/react.png';
-
+import APP_LOGO from 'assets/images/app.png';
 import './NavBar.scss';
 
 const NavBar: React.FC = () => {
   return (
-    <nav
-      className="navbar navigationbar"
-      role="navigation"
-      aria-label="main navigation"
-    >
-      <div className="navbar-start">
-        <Link to={HOME}>
-          <img src={REACT_LOGO} alt="react" width="50" />
+    <nav className="navbar bar" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <Link to={HOME} className="">
+          <div className="bar__icon-left">
+            <img src={APP_LOGO} alt="app" width="50" />
+          </div>
         </Link>
       </div>
     </nav>

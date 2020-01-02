@@ -6,7 +6,8 @@ import {
   useLocation
 } from 'react-router-dom';
 
-import Main from 'routes/main';
+import Dashboard from 'routes/dashboard';
+
 import AppLayout from 'layouts/AppLayout';
 
 import { HOME } from 'constants/routes';
@@ -21,17 +22,17 @@ const ScrollToTop = () => {
   return null;
 };
 
-const UnauthenticatedApp: React.FC = () => {
+const AuthenticatedApp: React.FC = () => {
   return (
     <Router>
       <AppLayout>
         <ScrollToTop />
         <Switch>
-          <Route exact path={HOME} component={Main} />
+          <Route exact path={HOME} component={Dashboard} />
         </Switch>
       </AppLayout>
     </Router>
   );
 };
 
-export default UnauthenticatedApp;
+export default AuthenticatedApp;

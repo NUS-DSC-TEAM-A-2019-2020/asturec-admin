@@ -1,7 +1,21 @@
 @import 'assets/scss/theme.scss';
 
-.navigationbar {
-  background-color: $app-theme-color;
-  padding-top: 10px;
-  padding-bottom: 10px;
+.bar {
+  box-shadow: 0 8px 6px -10px black;
+
+  &__icon-left {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  &__icon-right {
+    border: none;
+  }
+
+  &__item {
+    &--vcenter {
+      display: flex;
+      align-items: center;
+    }
+  }
 }
