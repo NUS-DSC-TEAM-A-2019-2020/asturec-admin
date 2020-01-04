@@ -19,7 +19,7 @@ const Loader: React.FC = () => {
         css={override}
         sizeUnit="px"
         size={150}
-        color="#00AAAA"
+        color="#159130"
         loading
       />
     </div>
